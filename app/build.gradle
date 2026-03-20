@@ -54,6 +54,7 @@ dependencies {
     implementation files('libs/wind-sdk-4.24.9.aar')
     // AndroidX 项目添加
     implementation libs.androidx.core
+    implementation files('libs/mimo-ad-sdk-5.3.8.27.aar')
 
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle.runtime.ktx

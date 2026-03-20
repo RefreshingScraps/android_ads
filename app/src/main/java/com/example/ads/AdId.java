@@ -96,4 +96,7 @@ public class AdId {
         //自渲染信息流广告
         public static String FEED_ID = "ed70b4760ff";
     }
+    public static class MimoId{
+        public static String SPLASH_ID = "94f4805a2d50ba6e853340f9035fda18";
+    }
 }

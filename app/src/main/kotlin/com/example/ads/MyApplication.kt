@@ -12,5 +12,6 @@ class MyApplication : Application() {
         Init.adSDKisLoaded[AdPlatform.GDT] = false
         Init.adSDKisLoaded[AdPlatform.KS] = false
         Init.adSDKisLoaded[AdPlatform.SIGMOB] = false
+        Init.adSDKisLoaded[AdPlatform.MIMO] = false
     }
 }

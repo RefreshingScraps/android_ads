@@ -8,4 +8,5 @@ public enum AdPlatform {
     HW,
     KS,
     SIGMOB,
+    MIMO,
 }
