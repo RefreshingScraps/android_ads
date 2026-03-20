@@ -22,6 +22,9 @@
         tools:ignore="BackgroundLocationPolicy" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <permission      android:name="${applicationId}.openadsdk.permission.TT_PANGOLIN"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="${applicationId}.openadsdk.permission.TT_PANGOLIN" />
 
     <application
         android:name=".MyApplication"

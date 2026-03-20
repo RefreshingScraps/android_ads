@@ -20,6 +20,8 @@ public class loadAdByType {
                 return AdPlatform.BAIDU;
             case "BEIZI":
                 return AdPlatform.BEIZI;
+            case "CSJ":
+                return AdPlatform.CSJ;
             default:
                 throw new IllegalArgumentException("非法参数：" + adPlatform);
         }
@@ -34,6 +36,9 @@ public class loadAdByType {
                 break;
             case BEIZI:
                 BeiZiAd.InitBeiZiSDK(context, "");
+                break;
+            case CSJ:
+                CsjAd.InitCsjSDK(context, AdId.CsjId.APP_ID, context.getString(R.string.app_name));
                 break;
         }
     }
@@ -52,6 +57,9 @@ public class loadAdByType {
                         break;
                     case BEIZI:
                         BeiZiAd.BeiziSplashAd(context, AdId.BeiziId.SPLASH_ID , SplashAdContainer);
+                        break;
+                    case CSJ:
+                        CsjAd.CsjSplashAd(context, AdId.CsjId.SPLASH_ID, SplashAdContainer);
                         break;
                     default:
                         goToMainActivity(context);

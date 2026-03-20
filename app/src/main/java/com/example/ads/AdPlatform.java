@@ -3,4 +3,5 @@ public enum AdPlatform {
     BAIDU,
     ADMOB,
     BEIZI,
+    CSJ,
 }

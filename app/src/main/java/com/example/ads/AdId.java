@@ -22,4 +22,14 @@ public class AdId {
         public static String SPLASH_ID = "104835";
         public static String REWARD_ID = "103226";
     }
+    public static class CsjId{
+        public static String APP_ID = "5001121";
+        public static String SPLASH_ID = "801121648";
+        public static String NATIVE_SIMPLE_ID = "901121737";
+        public static String NATIVE_RECYCLERVIEW_ID = "901121125";
+        public static String BANNER_ID = "901121246";
+        public static String INTER_ID = "945509693";
+        public static String REWARD_ID = "901121365";
+        public static String FULL_VIDEO_ID = "901121073";
+    }
 }
