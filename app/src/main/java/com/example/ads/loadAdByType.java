@@ -26,6 +26,8 @@ public class loadAdByType {
                 return AdPlatform.GDT;
             case "HW":
                 return AdPlatform.HW;
+            case "KS":
+                return AdPlatform.KS;
             default:
                 throw new IllegalArgumentException("非法参数：" + adPlatform);
         }
@@ -49,6 +51,9 @@ public class loadAdByType {
                 break;
             case HW:
                 HwAd.InitHwSDK(context);
+                break;
+            case KS:
+                KsAd.initKSSDK(context, AdId.KsId.APP_ID, context.getString(R.string.app_name));
                 break;
         }
     }
@@ -76,6 +81,9 @@ public class loadAdByType {
                         break;
                     case HW:
                         HwAd.HwSplashAd(context, AdId.HwId.SPLASH_ID_PORTRAIT, SplashAdContainer.findViewById(R.id.splash_ad_view));
+                        break;
+                    case KS:
+                        KsAd.KSSplashAd(context, AdId.KsId.SPLASH_ID, SplashAdContainer);
                         break;
                     default:
                         goToMainActivity(context);

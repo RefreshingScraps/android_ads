@@ -49,6 +49,7 @@ dependencies {
     implementation libs.gson
     implementation libs.androidx.cardview
     implementation libs.ads.lite
+    implementation files('libs/kssdk-ad-4.9.20.5-publishRelease-1910680d9f.aar')
 
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle.runtime.ktx

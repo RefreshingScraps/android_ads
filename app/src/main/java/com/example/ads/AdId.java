@@ -77,4 +77,12 @@ public class AdId {
         public static String REWARD_ID = "testx9dtjwj8hp";
         public static String INSTREAM_ID = "testy3cglm3pj0";
     }
+    public static class KsId{
+        public static String APP_ID = "90009";
+        public static long SPLASH_ID = 4000000042L;
+        public static long FEED_ID = 90009003L;
+        public static long INTER_ID = 90009002L;
+        public static long REWARD_ID = 90009001L;
+        public static long FULL_VIDEO_ID = 90009002L;
+    }
 }
