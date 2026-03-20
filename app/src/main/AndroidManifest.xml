@@ -130,6 +130,17 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
             android:multiprocess="true"/>
         <!--广点通SDK End-->
+        <!--米盟SDK-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/mimo_file_paths" />
+        </provider>
+        <!--米盟SDK End-->
     </application>
 
 </manifest>

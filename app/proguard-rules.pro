@@ -79,3 +79,41 @@
 -keep class org.json.**{*;}
 -keep public class com.netease.nis.sdkwrapper.Utils {public <methods>;}
 #Sigmob End
+
+#-------- mimo SDK start ---------
+-dontwarn com.miui.zeus.**
+-keep class com.miui.zeus.** {
+    *;
+}
+-keep class com.miui.analytics.** { *; }
+-keep class com.xiaomi.analytics.* { public protected *; }
+-keep class * extends android.os.IInterface{
+    *;
+}
+
+# gson
+-keepattributes Signature
+-keepattributes *Annotation*
+-dontwarn sun.misc.**
+-keep class com.google.gson.examples.android.model.** { <fields>; }
+-keep class * implements com.google.gson.TypeAdapterFactory
+-keep class * implements com.google.gson.JsonSerializer
+-keep class * implements com.google.gson.JsonDeserializer
+-keepclassmembers,allowobfuscation class * {
+  @com.google.gson.annotations.SerializedName <fields>;
+}
+
+# glide
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep class * extends com.bumptech.glide.module.AppGlideModule {
+ <init>(...);
+}
+-keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
+}
+-keep class com.bumptech.glide.load.data.ParcelFileDescriptorRewinder$InternalRewinder {
+  *** rewind();
+}
+-keep class com.market.** { *; }
+-dontwarn com.market.**
