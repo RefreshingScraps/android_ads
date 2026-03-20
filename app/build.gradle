@@ -40,6 +40,7 @@ dependencies {
 
     implementation libs.material
     implementation libs.play.services.ads
+    implementation files('libs/Baidu_MobAds_SDK-release_v9.422.aar')
 
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle.runtime.ktx

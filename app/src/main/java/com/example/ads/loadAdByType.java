@@ -16,6 +16,8 @@ public class loadAdByType {
         switch (adPlatform){
             case "ADMOB":
                 return AdPlatform.ADMOB;
+            case "BAIDU":
+                return AdPlatform.BAIDU;
             default:
                 throw new IllegalArgumentException("非法参数：" + adPlatform);
         }
@@ -24,6 +26,9 @@ public class loadAdByType {
         switch (adPlatform) {
             case ADMOB:
                 AdMob.initAdMobSDK(context);
+                break;
+            case BAIDU:
+                BaiduAd.InitBaiduSDK(context, AdId.BaiduId.APP_ID);
                 break;
         }
     }
@@ -36,6 +41,9 @@ public class loadAdByType {
                 switch (selectedPlatform) {
                     case ADMOB:
                         AdMob.AdMobSplashAd((Activity) context, AdId.AdMobId.SPLASH_ID);
+                        break;
+                    case BAIDU:
+                        BaiduAd.BaiduSplashAd(context, AdId.BaiduId.SPLASH_ID, SplashAdContainer);
                         break;
                     default:
                         goToMainActivity(context);
