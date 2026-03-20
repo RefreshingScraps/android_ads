@@ -7,5 +7,6 @@ class MyApplication : Application() {
         super.onCreate()
         Init.adSDKisLoaded[AdPlatform.ADMOB] = false
         Init.adSDKisLoaded[AdPlatform.BAIDU] = false
+        Init.adSDKisLoaded[AdPlatform.BEIZI] = false
     }
 }

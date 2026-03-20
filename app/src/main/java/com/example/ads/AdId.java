@@ -18,4 +18,8 @@ public class AdId {
         public static String INTER_ID = "2403633";
         public static String REWARD_ID = "5925490";
     }
+    public static class BeiziId{
+        public static String SPLASH_ID = "104835";
+        public static String REWARD_ID = "103226";
+    }
 }
