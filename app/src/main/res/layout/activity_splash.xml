@@ -5,6 +5,23 @@
     android:background="@color/white"
     android:orientation="vertical">
 
+    <!-- 上方广告容器 -->
+    <FrameLayout
+        android:id="@+id/SplashAdContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/bottom_content">
+        <ImageView
+            android:id="@+id/SplashImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.huawei.hms.ads.splash.SplashView
+            android:id="@+id/splash_ad_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
     <!-- 下方应用信息区域 -->
     <LinearLayout
         android:id="@+id/bottom_content"
