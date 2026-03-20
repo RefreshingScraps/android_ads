@@ -8,6 +8,7 @@ import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
 import android.view.ViewGroup
 import android.content.Context
+import java.util.Random
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
@@ -27,6 +28,11 @@ class SplashActivity : AppCompatActivity() {
                 finish()
             }
         }
+
+        val platforms = AdPlatform.entries.toTypedArray()
+        val selectedPlatform: AdPlatform = platforms[Random().nextInt(platforms.size)]
+        loadAdByType.loadSplashAd(this, selectedPlatform, findViewById(R.id.SplashAdContainer))
+
     }
 
     override fun onDestroy() {
