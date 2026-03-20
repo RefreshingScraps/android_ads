@@ -22,6 +22,8 @@ public class loadAdByType {
                 return AdPlatform.BEIZI;
             case "CSJ":
                 return AdPlatform.CSJ;
+            case "GDT":
+                return AdPlatform.GDT;
             default:
                 throw new IllegalArgumentException("非法参数：" + adPlatform);
         }
@@ -39,6 +41,9 @@ public class loadAdByType {
                 break;
             case CSJ:
                 CsjAd.InitCsjSDK(context, AdId.CsjId.APP_ID, context.getString(R.string.app_name));
+                break;
+            case GDT:
+                GDTAd.InitGDTSDK(context, AdId.GDTId.APP_ID);
                 break;
         }
     }
@@ -60,6 +65,9 @@ public class loadAdByType {
                         break;
                     case CSJ:
                         CsjAd.CsjSplashAd(context, AdId.CsjId.SPLASH_ID, SplashAdContainer);
+                        break;
+                    case GDT:
+                        GDTAd.GDTSplashAd(context, AdId.GDTId.SPLASH_ID, SplashAdContainer);
                         break;
                     default:
                         goToMainActivity(context);

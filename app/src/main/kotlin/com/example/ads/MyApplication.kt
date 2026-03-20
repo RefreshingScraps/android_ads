@@ -9,5 +9,6 @@ class MyApplication : Application() {
         Init.adSDKisLoaded[AdPlatform.BAIDU] = false
         Init.adSDKisLoaded[AdPlatform.BEIZI] = false
         Init.adSDKisLoaded[AdPlatform.CSJ] = false
+        Init.adSDKisLoaded[AdPlatform.GDT] = false
     }
 }

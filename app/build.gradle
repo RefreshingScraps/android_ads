@@ -43,6 +43,8 @@ dependencies {
     implementation files('libs/Baidu_MobAds_SDK-release_v9.422.aar')
     implementation files('libs/ad-beizi-5.2.2.0.aar')
     implementation files('libs/open_ad_sdk_7.2.2.1.aar') //穿山甲SDK
+    implementation libs.okhttp
+    implementation files('libs/GDTSDK.unionNormal.4.662.1532.aar')
 
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle.runtime.ktx

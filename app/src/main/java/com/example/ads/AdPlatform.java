@@ -4,4 +4,6 @@ public enum AdPlatform {
     ADMOB,
     BEIZI,
     CSJ,
+    GDT,
+
 }
