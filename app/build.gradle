@@ -50,6 +50,8 @@ dependencies {
     implementation libs.androidx.cardview
     implementation libs.ads.lite
     implementation files('libs/kssdk-ad-4.9.20.5-publishRelease-1910680d9f.aar')
+    implementation files('libs/wind-common-1.8.7.aar')
+    implementation files('libs/wind-sdk-4.24.9.aar')
 
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle.runtime.ktx

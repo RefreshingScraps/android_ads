@@ -85,4 +85,15 @@ public class AdId {
         public static long REWARD_ID = 90009001L;
         public static long FULL_VIDEO_ID = 90009002L;
     }
+    public static class SigmobId{
+        public static String APP_ID = "6878";
+        public static String APP_KEY = "8ebc1fd1c27e650c";
+        public static String SPLASH_ID = "ea1f8f21300"; //开屏广告
+        //插屏广告
+        public static String INTER_ID = "ea1f8f45d80";
+        //激励广告
+        public static String REWARD_ID = "ea1f8ea2d90";
+        //自渲染信息流广告
+        public static String FEED_ID = "ed70b4760ff";
+    }
 }

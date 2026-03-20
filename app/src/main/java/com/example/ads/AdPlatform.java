@@ -6,5 +6,6 @@ public enum AdPlatform {
     CSJ,
     GDT,
     HW,
-    KS
+    KS,
+    SIGMOB,
 }

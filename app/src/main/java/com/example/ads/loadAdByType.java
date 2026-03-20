@@ -28,6 +28,8 @@ public class loadAdByType {
                 return AdPlatform.HW;
             case "KS":
                 return AdPlatform.KS;
+            case "SIGMOB":
+                return AdPlatform.SIGMOB;
             default:
                 throw new IllegalArgumentException("非法参数：" + adPlatform);
         }
@@ -54,6 +56,9 @@ public class loadAdByType {
                 break;
             case KS:
                 KsAd.initKSSDK(context, AdId.KsId.APP_ID, context.getString(R.string.app_name));
+                break;
+            case SIGMOB:
+                SigmobAd.initSigmobSDK(context, AdId.SigmobId.APP_ID, AdId.SigmobId.APP_KEY);
                 break;
         }
     }
@@ -84,6 +89,10 @@ public class loadAdByType {
                         break;
                     case KS:
                         KsAd.KSSplashAd(context, AdId.KsId.SPLASH_ID, SplashAdContainer);
+                        break;
+                    case SIGMOB:
+                        // Sigmob ID提供：https://github.com/gstory0404/sigmobad
+                        SigmobAd.SigmobSplashAd(context, AdId.SigmobId.SPLASH_ID, null, null, SplashAdContainer);
                         break;
                     default:
                         goToMainActivity(context);
