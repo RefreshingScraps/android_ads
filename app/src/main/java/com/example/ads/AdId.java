@@ -64,4 +64,17 @@ public class AdId {
         public static final String UNIFIED_VIDEO_VIDEO_ID_LARGE_HORIZONTAL = "4090791272610625";
         public static final String UNIFIED_INTERSTITIAL_ID_ONLY_SMALL2 = "8020259898964453";// 只小规格
     }
+    public static class HwId{
+        public static String SPLASH_ID_PORTRAIT = "testd7c5cewoj6";
+        public static String SPLASH_ID_LANDSCAPE = "testq6zq98hecj";
+        public static String INTER_ID_VIDEO = "testb4znbuh3n2";
+        public static String INTER_ID_IMAGE = "teste9ih9j0rc3";
+        public static String NATIVE_ID = "testu7m3hc4gvm";
+        public static String NATIVE_ID_SMALL = "testb65czjivt9";
+        public static String NATIVE_ID_THREE = "testr6w14o0hqz";
+        public static String NATIVE_ID_VIDEO = "testy63txaom86";
+        public static String BANNER_ID = "testw6vs28auh3";
+        public static String REWARD_ID = "testx9dtjwj8hp";
+        public static String INSTREAM_ID = "testy3cglm3pj0";
+    }
 }

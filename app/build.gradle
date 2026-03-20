@@ -32,6 +32,7 @@ android {
         targetCompatibility JavaVersion.VERSION_11
     }
     buildFeatures {
+        aidl true
         compose true
     }
 }
@@ -45,6 +46,9 @@ dependencies {
     implementation files('libs/open_ad_sdk_7.2.2.1.aar') //穿山甲SDK
     implementation libs.okhttp
     implementation files('libs/GDTSDK.unionNormal.4.662.1532.aar')
+    implementation libs.gson
+    implementation libs.androidx.cardview
+    implementation libs.ads.lite
 
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle.runtime.ktx

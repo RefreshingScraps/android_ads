@@ -24,6 +24,8 @@ public class loadAdByType {
                 return AdPlatform.CSJ;
             case "GDT":
                 return AdPlatform.GDT;
+            case "HW":
+                return AdPlatform.HW;
             default:
                 throw new IllegalArgumentException("非法参数：" + adPlatform);
         }
@@ -44,6 +46,9 @@ public class loadAdByType {
                 break;
             case GDT:
                 GDTAd.InitGDTSDK(context, AdId.GDTId.APP_ID);
+                break;
+            case HW:
+                HwAd.InitHwSDK(context);
                 break;
         }
     }
@@ -68,6 +73,9 @@ public class loadAdByType {
                         break;
                     case GDT:
                         GDTAd.GDTSplashAd(context, AdId.GDTId.SPLASH_ID, SplashAdContainer);
+                        break;
+                    case HW:
+                        HwAd.HwSplashAd(context, AdId.HwId.SPLASH_ID_PORTRAIT, SplashAdContainer.findViewById(R.id.splash_ad_view));
                         break;
                     default:
                         goToMainActivity(context);
