@@ -99,4 +99,14 @@ public class AdId {
     public static class MimoId{
         public static String SPLASH_ID = "94f4805a2d50ba6e853340f9035fda18";
     }
+    public static class MSId{
+        public static String APP_ID = "106083";
+        public static String SPLASH_ID = "1063885";
+        public static String REWARD_ID = "1063887";
+        public static String FULL_VIDEO_ID = "1063887";
+        public static String INTER_ID = "1063886";
+        //原生信息流广告
+        public static String FEED_ID = "1063888";
+        public static String DRAW_ID = "1063888";
+    }
 }

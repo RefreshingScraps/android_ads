@@ -57,6 +57,7 @@ dependencies {
     implementation files('libs/mimo-ad-sdk-5.3.8.27.aar')
     // Glide核心库
     implementation libs.glide
+    implementation files('libs/ms-sdk_3.0.0.0_release.aar')
 
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle.runtime.ktx

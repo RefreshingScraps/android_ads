@@ -32,6 +32,8 @@ public class loadAdByType {
                 return AdPlatform.SIGMOB;
             case "MIMO":
                 return AdPlatform.MIMO;
+            case "MS":
+                return AdPlatform.MS;
             default:
                 throw new IllegalArgumentException("非法参数：" + adPlatform);
         }
@@ -64,6 +66,9 @@ public class loadAdByType {
                 break;
             case MIMO:
                 MimoAd.initMimoSDK(context);
+                break;
+            case MS:
+                MsAd.initMsAdSDK(context, AdId.MSId.APP_ID);
                 break;
         }
     }
@@ -101,6 +106,9 @@ public class loadAdByType {
                         break;
                     case MIMO:
                         MimoAd.MimoSplashAd(context, AdId.MimoId.SPLASH_ID, SplashAdContainer);
+                        break;
+                    case MS:
+                        MsAd.MsSplashAd(context, AdId.MSId.SPLASH_ID, SplashAdContainer);
                         break;
                     default:
                         goToMainActivity(context);
