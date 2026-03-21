@@ -3,8 +3,10 @@ package com.example.ads;
 import static com.example.ads.SplashActivity.goToMainActivity;
 
 import android.app.Activity;
+import android.app.Application;
 import android.content.Context;
 import android.content.res.Configuration;
+import android.util.Log;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -38,6 +40,12 @@ public class loadAdByType {
                 return AdPlatform.OCTOPUS;
             case "TAPTAP":
                 return AdPlatform.TAPTAP;
+            case "OSET":
+                return AdPlatform.OSET;
+            case "QIMING":
+                return AdPlatform.QIMING;
+            case "JD":
+                return AdPlatform.JD;
             default:
                 throw new IllegalArgumentException("非法参数：" + adPlatform);
         }
@@ -79,6 +87,18 @@ public class loadAdByType {
                 break;
             case TAPTAP:
                 TaptapAd.InitTaptapSDK(context, AdId.TaptapId.MEDIA_ID, AdId.TaptapId.MEDIA_NAME, AdId.TaptapId.MEDIA_KEY);
+                break;
+            case QIMING:
+                QiMingAd.InitQiMingSDK(context, "100002");//包名不对
+                break;
+            case OSET:
+                OSETAd.initOSETSDK((Application) context.getApplicationContext(), AdId.OpenSetId.APP_KEY);
+                break;
+            case JD:
+                JdAd.initJadSDK(context, AdId.JdId.APP_ID);
+                break;
+            case TANX:
+                TanxAd.initTanxSDK((Activity) context, AdId.TanxId.APP_ID, AdId.TanxId.APP_KEY);
                 break;
         }
     }
@@ -123,6 +143,21 @@ public class loadAdByType {
                     case TAPTAP:
                         TaptapAd.TaptapSplashAd(context, AdId.TaptapId.horizontal.SPLASH_ID, (Activity) context, SplashAdContainer);
                         break;
+                    case OCTOPUS:
+                        OctopusAd.OctopusSplashAd(context, AdId.OctopusId.SPLASH_ID, SplashAdContainer);
+                        break;
+                    case OSET:
+                        OSETAd.OSETSplashAd((Activity) context, AdId.OpenSetId.SPLASH_ID, SplashAdContainer);
+                        break;
+                    case JD:
+                        JdAd.JadSplashAd(context, AdId.JdId.ESPLASH_ID, JdAd.getWidth(context), JdAd.getHeight(context), SplashAdContainer);
+                        break;
+                    //case TANX:
+                    //    TanxAd.TanxSplashAd(context, "TODO tanx广告位", SplashAdContainer);
+                    //    break;
+                    //case QIMING:
+                    //    QiMingAd.QiMingSplashAd(context, "TODO QiMing广告位", SplashAdContainer);
+                    //    break;
                     default:
                         goToMainActivity(context);
                         break;
@@ -144,6 +179,42 @@ public class loadAdByType {
             default:
                 goToMainActivity(context);
                 break;
+        }
+    }
+    public static void loadFeedAd(@NonNull Activity activity,@NonNull ViewGroup feedAdContainer,@NonNull AdPlatform adPlatform){
+        //feedAdContainer.setBackgroundColor(getResources().getColor(R.color.gray));
+        if(Boolean.FALSE.equals(Init.adSDKisLoaded.get(adPlatform))) {
+            initSDKByAdPlatform(activity, adPlatform);
+        }
+        switch (adPlatform) {
+            case CSJ:
+                CsjAd.CsjFeedAd(feedAdContainer.getContext(), AdId.CsjId.NATIVE_RECYCLERVIEW_ID, feedAdContainer);
+                break;
+            case BAIDU:
+                BaiduAd.BaiduFeedAd(feedAdContainer.getContext(), AdId.BaiduId.NATIVE_SIMPLE_ID, feedAdContainer);
+                break;
+            case GDT:
+                GDTAd.GDTFeedAd(feedAdContainer.getContext(), AdId.GDTId.NATIVE_EXPRESS_ID_PICTURE_VIDEO, feedAdContainer);
+                break;
+            case TAPTAP:
+                TaptapAd.TaptapNativeAd(activity, AdId.TaptapId.FEED.PICTURE_ID, feedAdContainer);
+                break;
+            case SIGMOB:
+                SigmobAd.SigmobNativeAd(feedAdContainer.getContext(), AdId.SigmobId.FEED_ID, null, feedAdContainer);
+                break;
+            case MS:
+                MsAd.MsRecyclerMixAdAd(activity, AdId.MSId.FEED_ID, feedAdContainer);
+                break;
+            case KS:
+                KsAd.KsFeedAd(AdId.KsId.FEED_ID, feedAdContainer);
+                break;
+            case OCTOPUS:
+                OctopusAd.OctopusNativeAd(feedAdContainer.getContext(), AdId.OctopusId.NATIVE_RECYCLERVIEW_ID, feedAdContainer);
+                break;
+            default:
+                Log.i("广告", "没有选中广告");
+                break;
+            //        FeedAds.HwAd(feedAdContainer.getContext(), AppAdId.HwId.NATIVE_ID_SMALL,adItem.HwNativeAdContainer);
         }
     }
 }

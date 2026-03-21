@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 开关控制按钮（Switch） -->
+<androidx.appcompat.widget.SwitchCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/switch_control"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:checked="false"
+    android:text="@string/options_text"
+    android:textColor="@color/black"
+    android:textOff="@string/off"
+    android:textOn="@string/on"
+    android:textSize="11sp"
+    android:thumbTint="@color/teal_200"
+    android:trackTint="@color/gray"
+    android:padding="10dp" />

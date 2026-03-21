@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+     android:id="@+id/FeedAdContainer">
+
+    <RelativeLayout
+         android:layout_height="200dp"
+         android:layout_width="match_parent"
+         android:id="@+id/rl_container">
+
+        <FrameLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:id="@+id/ad_video">
+
+        </FrameLayout>
+
+        <ImageView
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:adjustViewBounds="true"
+             android:contentDescription="@null"
+             android:scaleType="fitXY"
+             android:id="@+id/ad_image" />
+
+        <FrameLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:id="@+id/ad_compliance">
+
+        </FrameLayout>
+
+        <ImageView
+             android:layout_height="15dp"
+             android:layout_width="15dp"
+             android:contentDescription="@null"
+             android:src="@drawable/oct_close"
+             android:layout_alignParentEnd="true"
+             android:id="@+id/ad_close" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp">
+
+        <ImageView
+             android:layout_height="60dp"
+             android:layout_width="60dp"
+             android:visibility="gone"
+             android:adjustViewBounds="true"
+             android:contentDescription="@null"
+             android:scaleType="fitCenter"
+             android:layout_centerVertical="true"
+             android:id="@+id/ad_icon" />
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginEnd="5dp"
+             android:contentDescription="@null"
+             android:layout_centerVertical="true"
+             android:importantForAccessibility="no"
+             android:layout_alignParentEnd="true"
+             android:id="@+id/ad_button" />
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_toEndOf="@+id/ad_icon"
+             android:layout_toStartOf="@+id/ad_button"
+             android:layout_centerVertical="true"
+             android:orientation="vertical"
+             android:layout_marginStart="5dp">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textSize="14sp"
+                 android:textColor="#000000"
+                 android:id="@+id/ad_title" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textSize="12sp"
+                 android:textColor="#000000"
+                 android:layout_marginTop="5dp"
+                 android:id="@+id/ad_desc" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginVertical="2dp">
+
+        <ImageView
+             android:layout_height="16dp"
+             android:layout_width="32dp"
+             android:contentDescription="@null"
+             android:scaleType="fitCenter"
+             android:layout_alignParentStart="true"
+             android:layout_marginStart="16dp"
+             android:id="@+id/ad_logo_text" />
+
+        <ImageView
+             android:layout_height="16dp"
+             android:layout_width="16dp"
+             android:contentDescription="@null"
+             android:scaleType="fitCenter"
+             android:layout_alignParentStart="true"
+             android:id="@+id/ad_logo" />
+
+    </RelativeLayout>
+
+</LinearLayout>

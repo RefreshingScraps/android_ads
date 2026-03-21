@@ -12,4 +12,8 @@ public enum AdPlatform {
     MS,
     OCTOPUS,
     TAPTAP,
+    OSET,
+    QIMING,
+    JD,
+    TANX
 }

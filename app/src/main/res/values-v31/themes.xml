@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.App.SplashScreen" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- 开屏页背景色 -->
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <!-- 开屏页图标（建议使用mipmap中的应用图标） -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/iconalias2</item>
+        <!-- 图标下方的文字（可选） -->
+        <item name="android:windowSplashScreenBrandingImage">@string/app_name</item>
+        <!-- 开屏页停留时间（毫秒，建议不超过1000ms） -->
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <!-- 开屏页结束后过渡到的主主题 -->
+        <item name="postSplashScreenTheme">@style/Theme.AppCompat.DayNight.NoActionBar</item>
+    </style>
+</resources>

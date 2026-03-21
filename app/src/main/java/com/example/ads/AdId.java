@@ -145,4 +145,29 @@ public class AdId {
             public static long VIDEO_ID = 1001411;
         }
     }
+    public static class QiMingId{
+
+    }
+
+    public static class OpenSetId{
+        public static String APP_KEY = "E6097975B89E83D6";
+        public static String SPLASH_ID = "7D5239D8D88EBF9B6D317912EDAC6439";
+        public static String INTER_ID = "1D273967F51868AF2C4E080D496D06D0";
+        public static String BANNER_ID = "107EB50EDFE65EA3306C8318FD57D0B3";
+        public static String REWARD_ID = "09A177D681D6FB81241C3DCE963DCB46";
+        public static String FULL_VIDEO_ID = "D879C3DED01D5CE319CD2751474BA8E4";
+        public static String NATIVE_ID = "89FEEA66F9228ED3F6420294B89A902B";
+        public static String DRAW_ID = "6328AB893D5DBA6B9D2791B54E1D2C16";
+    }
+    public static class JdId{
+        public static String APP_ID = "116567";
+        public static String ESPLASH_ID = "2525"; //模板-开屏
+        public static String EFEED_ID = "8126"; //模板-信息流
+        public static String NSPLASH_ID = "829117613"; //媒体渲染-开屏
+        public static String NFEED_ID = "829118588"; //媒体渲染-信息流
+    }
+    public static class TanxId{
+        public static String APP_ID = "2576100283";
+        public static String APP_KEY = "33459970";
+    }
 }
