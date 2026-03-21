@@ -121,4 +121,28 @@ public class AdId {
         //视频流广告
         public static String DRAW_ID = "10977";
     }
+    public static class TaptapId{
+        public static long MEDIA_ID = 1000007;
+        public static String MEDIA_NAME = "联盟正式-Android";
+        public static String MEDIA_KEY = "1AjDOjD0F3SDDmgTuBQHbCRULSizYPHV17viZObHvhDjf7Pq1rlarueOX1cYBucn";
+        public static class horizontal{
+            public static long SPLASH_ID = 1001561;
+            public static long BANNER_ID = 1036767;
+            public static long REWARD_ID = 1001558;
+            public static long INTER_HALF_ID = 1002224;
+            public static long INTER_FULL_ID = 1002223;
+        }
+        public static class vertical{
+            public static long SPLASH_ID = 1001560;
+            public static long BANNER_ID = 1001559;
+            public static long REWARD_ID = 1001253;
+            public static long INTER_HALF_ID = 1002222;
+            public static long INTER_FULL_ID = 1001557;
+        }
+
+        public static class FEED{
+            public static long PICTURE_ID = 1002046;
+            public static long VIDEO_ID = 1001411;
+        }
+    }
 }

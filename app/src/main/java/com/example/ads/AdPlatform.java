@@ -11,4 +11,5 @@ public enum AdPlatform {
     MIMO,
     MS,
     OCTOPUS,
+    TAPTAP,
 }

@@ -36,6 +36,8 @@ public class loadAdByType {
                 return AdPlatform.MS;
             case "OCTOPUS":
                 return AdPlatform.OCTOPUS;
+            case "TAPTAP":
+                return AdPlatform.TAPTAP;
             default:
                 throw new IllegalArgumentException("非法参数：" + adPlatform);
         }
@@ -74,6 +76,9 @@ public class loadAdByType {
                 break;
             case OCTOPUS:
                 OctopusAd.InitOctopusSDK(context, AdId.OctopusId.APP_ID);
+                break;
+            case TAPTAP:
+                TaptapAd.InitTaptapSDK(context, AdId.TaptapId.MEDIA_ID, AdId.TaptapId.MEDIA_NAME, AdId.TaptapId.MEDIA_KEY);
                 break;
         }
     }
@@ -115,6 +120,9 @@ public class loadAdByType {
                     case MS:
                         MsAd.MsSplashAd(context, AdId.MSId.SPLASH_ID, SplashAdContainer);
                         break;
+                    case TAPTAP:
+                        TaptapAd.TaptapSplashAd(context, AdId.TaptapId.horizontal.SPLASH_ID, (Activity) context, SplashAdContainer);
+                        break;
                     default:
                         goToMainActivity(context);
                         break;
@@ -124,6 +132,9 @@ public class loadAdByType {
                 switch (selectedPlatform){
                     case MIMO:
                         MimoAd.MimoSplashAd(context, AdId.MimoId.SPLASH_ID, SplashAdContainer);
+                        break;
+                    case TAPTAP:
+                        TaptapAd.TaptapSplashAd(context, AdId.TaptapId.vertical.SPLASH_ID, (Activity) context, SplashAdContainer);
                         break;
                     default:
                         goToMainActivity(context);

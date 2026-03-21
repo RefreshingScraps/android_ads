@@ -1,0 +1,89 @@
+[
+  {
+    "channel_name":  "tap",
+    "feed":  {
+      "video":  1001411,
+      "picture":  1002046
+    },
+    "interstitial":  {
+      "horizontal":  {
+        "full":  1002223,
+        "half":  1002224
+      },
+      "vertical":  {
+        "full":  1001557,
+        "half":  1002222
+      }
+    },
+    "banner":  {
+      "horizontal":  1036767,
+      "vertical":  1001559
+    },
+    "splash":  {
+      "horizontal":  1001561,
+      "vertical":  1001560
+    },
+    "reward":  {
+      "horizontal":  1001558,
+      "vertical":  1001253
+    }
+  },
+  {
+    "channel_name":  "tobid",
+    "feed":  {
+      "video":  1002139,
+      "picture":  1000700
+    },
+    "interstitial":  {
+      "horizontal":  {
+        "full":  1000063,
+        "half":  1000725
+      },
+      "vertical":  {
+        "full":  1002141,
+        "half":  1000890
+      }
+    },
+    "banner":  {
+      "horizontal":  1002140,
+      "vertical":  1000059
+    },
+    "splash":  {
+      "horizontal":  1000061,
+      "vertical":  1000057
+    },
+    "reward":  {
+      "horizontal":  1002139,
+      "vertical":  1000062
+    }
+  },
+  {
+    "channel_name":  "tradplus",
+    "feed": {
+      "video":1010115,
+      "picture": 1010114
+    },
+    "interstitial": {
+      "horizontal":{
+        "full": 1010125,
+        "half": 1010123
+      },
+      "vertical": {
+        "full": 1001557,
+        "half": 1010126
+      }
+    },
+    "banner": {
+      "horizontal":1010121,
+      "vertical": 1010122
+    },
+    "splash": {
+      "horizontal":1010118,
+      "vertical": 1010119
+    },
+    "reward": {
+      "horizontal":1010116,
+      "vertical": 1010117
+    }
+  }
+]
