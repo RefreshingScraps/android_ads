@@ -109,4 +109,16 @@ public class AdId {
         public static String FEED_ID = "1063888";
         public static String DRAW_ID = "1063888";
     }
+    public static class OctopusId{
+        public static String APP_ID = "20221128182451";
+        public static String SPLASH_ID = "7046";
+        public static String BANNER_ID = "7377";
+        public static String REWARD_ID = "7048";
+        public static String NATIVE_RECYCLERVIEW_ID = "7045";
+        public static String NATIVE_ID = "7166";
+        public static String INTER_ID = "7047";
+        public static String FULL_VIDEO_ID = "10974";
+        //视频流广告
+        public static String DRAW_ID = "10977";
+    }
 }

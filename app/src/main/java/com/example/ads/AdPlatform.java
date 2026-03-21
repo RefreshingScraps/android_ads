@@ -10,4 +10,5 @@ public enum AdPlatform {
     SIGMOB,
     MIMO,
     MS,
+    OCTOPUS,
 }

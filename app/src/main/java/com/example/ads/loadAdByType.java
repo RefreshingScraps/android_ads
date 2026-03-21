@@ -34,6 +34,8 @@ public class loadAdByType {
                 return AdPlatform.MIMO;
             case "MS":
                 return AdPlatform.MS;
+            case "OCTOPUS":
+                return AdPlatform.OCTOPUS;
             default:
                 throw new IllegalArgumentException("非法参数：" + adPlatform);
         }
@@ -69,6 +71,9 @@ public class loadAdByType {
                 break;
             case MS:
                 MsAd.initMsAdSDK(context, AdId.MSId.APP_ID);
+                break;
+            case OCTOPUS:
+                OctopusAd.InitOctopusSDK(context, AdId.OctopusId.APP_ID);
                 break;
         }
     }
