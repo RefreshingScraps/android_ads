@@ -117,3 +117,7 @@
 }
 -keep class com.market.** { *; }
 -dontwarn com.market.**
+
+# Octopus混淆
+-dontwarn com.octopus.**
+-keep class com.octopus.** {*;}

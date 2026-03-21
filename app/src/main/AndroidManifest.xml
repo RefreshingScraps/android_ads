@@ -26,6 +26,8 @@
         android:protectionLevel="signature" />
     <uses-permission android:name="${applicationId}.openadsdk.permission.TT_PANGOLIN" />
 
+    <uses-sdk tools:overrideLibrary="com.octopus.ad" />
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -38,6 +40,7 @@
         android:theme="@style/Theme.广告"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true"
         tools:replace="android:allowBackup"
         tools:ignore="ExtraText" >
 

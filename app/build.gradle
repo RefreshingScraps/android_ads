@@ -59,6 +59,7 @@ dependencies {
     implementation libs.glide
     implementation files('libs/ms-sdk_3.0.0.0_release.aar')
     implementation files('libs/octopus_ad_sdk_2.5.11.17.aar')
+    implementation files('libs/oaid_sdk_1.0.25.aar')
 
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle.runtime.ktx
