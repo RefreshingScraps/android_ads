@@ -21,6 +21,8 @@ appcompat = "1.7.1"
 
 [libraries]
 
+ad-openset-sdk = { module = "com.shenshi:ad-openset-sdk" }
+ad-tanx-adapter = { module = "com.shenshi:ad-tanx-adapter" }
 androidx-core = { module = "androidx.core:core", version.ref = "coreKtx" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 material = { module = "com.google.android.material:material", version.ref = "material" }

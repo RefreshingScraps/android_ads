@@ -15,5 +15,10 @@ class MyApplication : Application() {
         Init.adSDKisLoaded[AdPlatform.MIMO] = false
         Init.adSDKisLoaded[AdPlatform.MS] = false
         Init.adSDKisLoaded[AdPlatform.OCTOPUS] = false
+        Init.adSDKisLoaded[AdPlatform.OSET] = false
+        Init.adSDKisLoaded[AdPlatform.QIMING] = false
+        Init.adSDKisLoaded[AdPlatform.SIGMOB] = false
+        Init.adSDKisLoaded[AdPlatform.TANX] = false
+        Init.adSDKisLoaded[AdPlatform.TAPTAP] = false
     }
 }
